@@ -1,0 +1,32 @@
+{
+  "lora_modules": 348,
+  "trainable_params": 148426752,
+  "projector_params": 109105152,
+  "lora_params": 39321600,
+  "name": "e4_data_size_0.1",
+  "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+  "config": {
+    "name": "e4_data_size_0.1",
+    "description": "E2 + LoRA trên các khối attention và MLP của ViT.",
+    "model_id": "Qwen/Qwen3-VL-4B-Instruct",
+    "quantization": "nf4-4bit",
+    "lora": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": "llm+vit"
+    },
+    "train_projector": true,
+    "lr": 0.0002,
+    "batch_size": 2,
+    "grad_accum": 4,
+    "max_steps": 300,
+    "seed": 42,
+    "train_fraction": 0.1
+  },
+  "train_images": 142,
+  "final_loss": 0.0149,
+  "peak_vram_gb": 7.6986894607543945,
+  "train_minutes": 50.47121543089549,
+  "gpu": "Tesla T4"
+}
