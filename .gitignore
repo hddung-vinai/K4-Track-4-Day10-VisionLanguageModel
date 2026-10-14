@@ -12,3 +12,5 @@ adapter*/
 .ipynb_checkpoints/
 .pytest_cache/
 .DS_Store
+lab_day10_old.ipynb
+day10_results.zip
